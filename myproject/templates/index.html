@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<title>Andrew Puglionesi</title>
+
+<div class="container" style="width:70%;min-width:320px;">    
+	<hw id="indexhead">{% if language == "English" %}Hello, world!{% else %}¡Hola, mundo!{% endif %}</hw>
+    <hr>
+    <p class="site">
+        <span class="highlight">
+            {% if language == "English" %}
+            I am a computer science major at the University of Pittsburgh interested in making the world a better place through technology. What that means exactly I’m not sure, but I can’t wait to find out.
+            {% else %}
+            Estudio la ciencia de computación en la Universidad de Pittsburgh. Tengo interés en mejorar el mundo con la tecnología. No estoy seguro de que exactamente cómo, pero no puedo esparar a descubrirlo.
+            {% endif %}
+        </span>
+    </p>
+    <p class="site">
+        <span class="highlight">
+            {% if language == "English" %}
+            I have a strong grounding in the natural sciences, mathematics, and computer science, with practical experience in diverse areas, from laboratory research to music to software engineering and web development.
+            {% else %}
+            Tengo una base fuerta en las ciencias naturales, las matemáticas, y la ciencia de computación, además de experiencia práctica en áreas diversas, incluyendo las investigaciones científicas, la música, y la ingeniería de software y el desarrollo web.
+            {% endif %}
+        </span>
+    </p>
+    <p class="site">
+    <span class="highlight">
+        {% if language == "English" %}
+        Through it all, I’ve become convinced that the best way to learn something new is to do something new, to ask questions and seek answers, and always to strive for improvement.
+        {% else %}
+        Todo eso me ha convencido que la manera mejor para aprender algo nuevo es hacer algo nuevo, pedir preguntas y buscar respuestas, y siempre tratar de mejorarse.
+        {% endif %}
+    </span>
+    </p>
+</div>
+
+{% endblock %}

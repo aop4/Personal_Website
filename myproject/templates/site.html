@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<title>Andrew Puglionesi - About the Site</title>
+<div class="container" style="width:100%;padding-top: 10%"> 
+    <p class="site"><span class="highlight">{% if language == "English" %}This website is built with a modified <a href="https://getbootstrap.com/examples/starter-template/" target="_blank">Bootstrap template</a> that's in itself functionless. I added all the content myself using HTML and CSS.{% else %}Este sitio web estuvo construido con una <a href="https://getbootstrap.com/examples/starter-template/" target="_blank">plantilla de Bootstrap</a> que no tiene ninguna función por sí solo. Hice lo demás con HTML y CSS.{% endif %}</span></p>
+    <p class="site"><span class="highlight">{% if language == "English" %}My goal in making the website was to provide simplicity and ease of use. If you notice any errors or glitches, please let me know!{% else %}Mi meta mientras diseñaba este sitio era darles simplicidad y usabilidad. Si habría unos errores o fallos técnicos, ¡dígame por favor!{% endif %}</span></p>
+    <p class="site"><span class="highlight">{% if language == "English" %}Contact me at {% else %}Para contactarme: {% endif %}<a href="mailto:andrewpuglionesi@gmail.com">andrewpuglionesi@gmail.com.</a></span></p>
+</div>
+
+{% endblock %}

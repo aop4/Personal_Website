@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<title>Andrew Puglionesi - On the Web</title>
+<div class="container" style="width:100%;">
+    <div style="width:15em;text-align:center;margin:auto;padding-top:6%">
+        <div class = "web-container">
+            <a href="https://www.linkedin.com/in/andrew-puglionesi" target="_blank" title="{% if language == "English" %}My LinkedIn page{% else %}Mi perfil de LinkedIn{% endif %}">
+                <i class="fa fa-linkedin-square web" aria-hidden="true"></i>
+            </a>
+            <span class="highlight push-right">LinkedIn</span>
+        </div>
+        <div class="web-container">
+            <a href="https://github.com/aop4" target="_blank" title="{% if language == "English" %}My GitHub repositories{% else %}Mis repositorios en GitHub{% endif %}">
+        	    <i class="fa fa-github-square web" aria-hidden="true"></i>
+            </a>
+            <span class="highlight push-right">GitHub</span>
+        </div>
+        <div class="web-container">
+            <a href="https://stringsofcharacters.wordpress.com/" target="_blank" title="{% if language == "English" %}My Wordpress blog{% else %}Mi blog{% endif %}">
+                <i class="fa fa-wordpress web" aria-hidden="true" style="font-size:7.5em"></i>
+            </a>
+            <span class="highlight push-right">WordPress</span>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

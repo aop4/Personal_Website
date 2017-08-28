@@ -1,0 +1,39 @@
+body {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+  border-bottom-width: 70px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+ul>li {
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 1px;
+    min-width: 60px;
+}
+
+ul>li.language {
+  position:absolute;
+  right:50px;
+  border-right-width:0px;
+}
+
+img {
+        padding-top:60px;
+        padding-bottom: 100px;
+}
+
+h1 {
+        padding-top: 10px;
+}
+
+img.photo {
+  padding-top:60px;
+  padding-bottom: 100px;
+}

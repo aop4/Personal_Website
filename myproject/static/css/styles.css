@@ -1,0 +1,178 @@
+body {
+  padding-top: 70px;
+  text-align: center;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+  border-bottom-width: 70px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+.nav.navbar-nav li a {
+  color: powderblue;
+}
+
+ul>li {
+  border-right-color: black;
+  border-right-style: solid;
+  border-right-width: 1px;
+  min-width: 60px;
+}
+
+ul>li.language {
+  position:absolute;
+  right:50px;
+  border-right-width:0px;
+}
+
+hr {
+  border-top:5px double;
+  width:100%;
+  border-color:white;
+  border-radius:10px;
+  margin-top:0px;
+}
+
+h1 {
+  font-family: monospace;
+  font-size: 500%;
+  color: white;
+  padding-bottom: 60px;
+}
+
+h1.photo {
+    padding-top: 10px;
+    font-style:"monospace";
+    font-size: 300%;
+    color:grey;
+    text-underline-position: 20px;
+}
+
+p {
+  font-family:serif;
+  color: #95a4e7;
+  font-size: 140%;
+  page-break-inside: avoid;
+}
+
+p.site {
+  font-family:serif;
+  color: #95a4e7;
+  padding-top: 20px;
+  font-size: 1.4em;
+  margin:auto;
+}
+
+space {
+  color: #95a4e7;
+  font-size: 140%;
+}
+
+span.highlight {
+  background-color: white;
+  font-size: 1.1em;
+}
+
+#thumb {
+  height:100%;
+  width:100%;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 5px;
+  float:left;
+  margin-right:1em;
+  padding-bottom:0.5em;
+}
+
+.rp_240, .rp_320, .rp_480, .rp_640, .rp_720 #thumb {
+  padding-bottom: 1em;
+}
+
+img.photo {
+  padding-top:60px;
+  padding-bottom: 100px;
+  width:70%;
+  max-width:800px;
+}
+
+div.view {
+  overflow:auto;
+  width:85%;
+  max-width:800px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #EBB918;
+  border-radius:10px;
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+  margin:auto;
+  text-align: left;
+}
+
+hw {
+  font-family: monospace;
+  font-size: 5em;
+}
+
+/*.rp_320 #indexhead {
+  font-size:1em;
+}*/
+
+.rp_240, .rp_320, .rp_480, .rp_640, .rp_720 #projects-head {
+  font-size:1em;
+}
+
+div.webview {
+  width:200px;
+  height:250px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin:auto;
+  text-align: left;
+  -webkit-columns: 200px 2;
+  -moz-columns: 200px 2;
+  columns: 200px 2;
+}
+
+p.wind {
+  font-family:serif;
+  color: grey;
+  font-size: 160%;
+  page-break-inside: avoid;
+  color:#36342c
+}
+
+div.footer-bar {
+  width:100%;
+  height:0.65%;
+  background:#222;
+  position:fixed;
+  bottom:0px;
+}
+
+body.base {
+  background-color:powderblue;
+  margin-bottom: 40px;
+  width:100%;
+}
+
+i.web {
+  font-size:9em;
+  margin:3px;
+}
+
+div.web-container {
+  text-align:left;
+}
+
+span.push-right {
+ position:relative;
+ left:0em;
+ bottom:2em;
+}
