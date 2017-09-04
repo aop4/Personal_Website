@@ -1,7 +1,17 @@
 body {
   padding-top: 70px;
   text-align: center;
+  height:100%;
 }
+
+div.index-box {
+  background:#eee;
+  padding:0.5em 0em 0.25em 0em;
+  border-radius:5px;
+  margin-bottom:2em;
+  background: rgba(238,238,238,0.6)
+}
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
@@ -34,6 +44,10 @@ hr {
   margin-top:0px;
 }
 
+.hr-cntnr {
+  margin-bottom:3em;
+}
+
 h1 {
   font-family: monospace;
   font-size: 500%;
@@ -51,14 +65,13 @@ h1.photo {
 
 p {
   font-family:serif;
-  color: #95a4e7;
+  color: #333;
   font-size: 140%;
   page-break-inside: avoid;
 }
 
 p.site {
   font-family:serif;
-  color: #95a4e7;
   padding-top: 20px;
   font-size: 1.4em;
   margin:auto;
@@ -70,7 +83,7 @@ space {
 }
 
 span.highlight {
-  background-color: white;
+  background-color:#ccc;
   font-size: 1.1em;
 }
 
@@ -157,14 +170,20 @@ div.footer-bar {
 }
 
 body.base {
-  background-color:powderblue;
+  background-color:#37A6E8;
   margin-bottom: 40px;
   width:100%;
+  height:100%;
 }
 
 i.web {
   font-size:9em;
   margin:3px;
+  color:#23527c;
+}
+
+i.web:hover {
+  color:#ff6366;
 }
 
 div.web-container {
