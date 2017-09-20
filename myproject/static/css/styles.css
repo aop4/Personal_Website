@@ -6,7 +6,7 @@ body {
 
 div.index-box {
   background:#eee;
-  padding:0.5em 0em 0.25em 0em;
+  padding:0.5em 0.25em 0.25em 0.25em;
   border-radius:5px;
   margin-bottom:2em;
   background: rgba(238,238,238,0.6)
@@ -64,7 +64,7 @@ h1.photo {
 }
 
 p {
-  font-family:serif;
+  font-family:'Open Sans', sans-serif;
   color: #333;
   font-size: 140%;
   page-break-inside: avoid;
