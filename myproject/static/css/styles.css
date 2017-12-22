@@ -117,13 +117,18 @@ div.view {
   padding-bottom: 20px;
   padding-left: 25px;
   padding-right: 25px;
-  background-color: #EBB918;
-  border-radius:10px;
-  border-color: white;
+  background-color: #5d4037;
+  /*background: rgba(238,238,238,0.6);*/
+  border-radius:8px;
+  border-color: #333;
   border-style: solid;
   border-width: 3px;
   margin:auto;
   text-align: left;
+}
+
+div.view > p {
+  color:#e0e0e0;
 }
 
 hw {
