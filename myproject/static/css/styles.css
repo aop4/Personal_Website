@@ -103,8 +103,9 @@ span.highlight {
 }
 
 div.photo-gallery {
-  width:70%;
+  width:85%;
   max-width:800px;
+  overflow: hidden;
   margin:auto;
   text-align:center;
 }
@@ -129,13 +130,13 @@ div.photo-gallery {
 
 
 .photo {
-  height:80%;
   max-height:800px;
   max-width:100%;
 }
 
 div.view {
   overflow:auto;
+  overflow-y: hidden;
   width:85%;
   max-width:800px;
   padding-top: 40px;
