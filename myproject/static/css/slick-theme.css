@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 .slick-loading .slick-list
 {
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
+    background: #fff u r l('./ajax-loader.gif') center center no-repeat;
 }
 
 @font-face
@@ -10,8 +10,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+    src: u r l('./fonts/slick.eot');
+    src: u r l('./fonts/slick.eot?#iefix') format('embedded-opentype'), u r l('./fonts/slick.woff') format('woff'), u r l('./fonts/slick.ttf') format('truetype'), u r l('./fonts/slick.svg#slick') format('svg');
 }
 
 .slick-prev,
