@@ -12,6 +12,18 @@
 	</div>
 
 	<div class="view">
+	    <img id="thumb" src="/static/images/graph.png">
+	    <p>{% if language == "English" %}Using Oracle SQL and the JDBC library, I worked on a team to write the backend and a simple user-facing program for a social media application, Social@Panther. Users can make, accept, and decline friend requests and group requests, create groups, send messages to friends or to groups, search the database to find users they know, create and delete their accounts, and more. This was a class project for a course in database management systems, but great care was taken to ensure the application was secure from malicious users.
+	    {% else %}Estoy trabajando en cumplir una translación.{% endif %}</p>
+	</div>
+
+	<div class="view">
+	    <img id="thumb" src="/static/images/Lock.png">
+	    <p>{% if language == "English" %}I implemented RSA encryption with 512-bit keys as well as some of the algorithms it uses to do math with very large numbers (division, multiplication, modular exponentiation, and the extended euclidean algorithm) as an exercise. In RSA encryption, a user has a "private" key (number) that only they have access to, and a "public" key (number) that everyone else can access. The application can use a person's private key and an SHA-256 hash (also a number) that's based on the contents of a file to generate a number called a signature. The signature is like a copy of a letter in the user's handwriting: it shows what was originally in the file, and we know the user made it. Another user can later verify that same file hasn't been changed by generating a hash based on the file's contents in the same way, "decrypting" that hash using the first person's "public" key, and comparing the result with the private-key signature made by the first user. If the two values are the same, it's like that whole "letter" has been shown to be in the first user's handwriting--we know no one else added anything to it. This allows a user or application to protect against malicious/unauthorized modifications to the original file.
+	    {% else %}Estoy trabajando en cumplir una translación.{% endif %}</p>
+	</div>
+
+	<div class="view">
 	    <img id="thumb" src="/static/images/proc.jpg">
 	    <p>{% if language == "English" %}This is part of a processor I designed for a course on assembly language and computer hardware. It executes a 16-bit reduced instruction set. In other words, it takes commands consisting of 16 1's and 0's and uses them to execute programs. It was designed using Logisim software.{% else %}Esto es una parte de un procesador que diseñé para una clase sobre el lenguaje ensamblador y el hardware de computador. Interpreta un conjunto de instrucciones reducidas con 16 bits. En otras palabras, usa instrucciones que consisten en 16 1's y 0's y las usa para realizar programas. Lo diseñé con Logisim.{% endif %}</p>
 	</div>
