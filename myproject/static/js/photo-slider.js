@@ -8,5 +8,17 @@ $(document).ready(function(){
   	nextArrow: $('.right-arrow'),
   	accessibility: true
   });
-  $('.slick-list').first().attr('tabindex', 0).focus(); //enables user to slide left and right with arrow keys
+  
+  enableArrowNav();
+
+  //catch all click events and enable arrow-key navigation should they occur outside the carousel
+  $(document).on('click', function(e) {
+  	enableArrowNav();
+  });
+
 });
+
+/*enables user to slide left and right with arrow keys*/
+function enableArrowNav() {
+	$('.slick-list').first().attr('tabindex', 0).focus();
+}
