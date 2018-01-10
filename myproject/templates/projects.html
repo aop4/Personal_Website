@@ -4,43 +4,46 @@
 <title>Andrew Puglionesi - Projects</title>
 
 <h1 id="projects-head">{% if language == "English" %} {Projects} {% else %} {Proyectos} {% endif %}</h1>
-<div class="photo-gallery">
-	<div class="view">
-	    <img id="thumb" src="/static/images/intertwine.png">
-	    <p>{% if language == "English" %}I interned at the Human-Computer Interaction Institute in Pittsburgh for several months. My team and I designed and developed an online community for learners involved in online courses. We hope to keep them engaged in the subject matter after those courses are over by providing a place where they can create and communicate.
-	    {% else %}Hice las prácticas en el Human-Computer Interaction Institute en Pittsburgh. Mi grupo y yo diseñábamos y desarrollábamos una comunidad en línea para estudiantes en clases online. Esperamos que tuvieren interés en las temas de sus clases después de tomarlas, a causa de este lugar en lo que pueden crear y comunicar.{% endif %}</p>
-	</div>
+<div class="carousel">
+	<div class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></div>
+	<div class="photo-gallery">
+		<div class="view">
+		    <img id="thumb" src="/static/images/intertwine.png">
+		    <p>{% if language == "English" %}I interned at the Human-Computer Interaction Institute in Pittsburgh for several months. My team and I designed and developed an online community for learners involved in online courses. We hope to keep them engaged in the subject matter after those courses are over by providing a place where they can create and communicate.
+		    {% else %}Hice las prácticas en el Human-Computer Interaction Institute en Pittsburgh. Mi grupo y yo diseñábamos y desarrollábamos una comunidad en línea para estudiantes en clases online. Esperamos que tuvieren interés en las temas de sus clases después de tomarlas, a causa de este lugar en lo que pueden crear y comunicar.{% endif %}</p>
+		</div>
 
-	<div class="view">
-	    <img id="thumb" src="/static/images/graph.png">
-	    <p>{% if language == "English" %}Using Oracle SQL and the JDBC library, I worked on a team to write the backend and a simple user-facing program for a social media application, Social@Panther. Users can make, accept, and decline friend requests and group requests, create groups, send messages to friends or to groups, search the database to find users they know, create and delete their accounts, and more. This was a class project for a course in database management systems, but great care was taken to ensure the application was secure from malicious users.
-	    {% else %}Usando Oracle SQL y JDBC, trabajé en equipo en escribir el back-end y una interfaz de usuario sencilla para una aplicación de redes sociales, Social@Panther. Usarios pueden enviar, aceptar, y declinar solicitudes de amistad y solicitudes para juntar grupos, crear grupos, enviar mensajes a amigos y grupos, buscar usarios en el sistema, crear y eliminar sus perfiles, y más. Este es un proyecto académico que hicimos para una clase de sistemas de administración de bases de datos. Tuvimos cuidado de proteger a la aplicación de usarios peligrosos (hackers). {% endif %}</p>
-	</div>
+		<div class="view">
+		    <img id="thumb" src="/static/images/graph.png">
+		    <p>{% if language == "English" %}Using Oracle SQL and the JDBC library, I worked on a team to write the backend and a simple user-facing program for a social media application, Social@Panther. Users can make, accept, and decline friend requests and group requests, create groups, send messages to friends or to groups, search the database to find users they know, create and delete their accounts, and more. This was a class project for a course in database management systems, but great care was taken to ensure the application was secure from malicious users.
+		    {% else %}Usando Oracle SQL y JDBC, trabajé en equipo en escribir el back-end y una interfaz de usuario sencilla para una aplicación de redes sociales, Social@Panther. Usarios pueden enviar, aceptar, y declinar solicitudes de amistad y solicitudes para juntar grupos, crear grupos, enviar mensajes a amigos y grupos, buscar usarios en el sistema, crear y eliminar sus perfiles, y más. Este es un proyecto académico que hicimos para una clase de sistemas de administración de bases de datos. Tuvimos cuidado de proteger a la aplicación de usarios peligrosos (hackers). {% endif %}</p>
+		</div>
 
-	<div class="view">
-	    <img id="thumb" src="/static/images/Lock.png">
-	    <p>{% if language == "English" %}I implemented RSA encryption with 512-bit keys as well as some of the algorithms it uses to do math with very large numbers (division, multiplication, modular exponentiation, and the extended Euclidean algorithm) as an exercise. In RSA encryption, a user has a "private" key (number) that only they have access to, and a "public" key (number) that everyone else can access. The application can use a person's private key and a hash (also a number) that's based on the contents of a file to generate a number called a signature. The signature is like a copy of a letter in the user's handwriting: it shows what was originally in the file, and we know the user made it. Another user can later verify that same file hasn't been changed. For this, the application generates a hash based on the file's contents in the same way, "decrypts" the signature using the first person's public key, and compares the result with the hash. If the two values are the same, it's like that whole "letter" has been shown to be in the first user's handwriting--we know no one else changed the file. This allows a user or application (with some minor modifications to the project) to protect against malicious/unauthorized modifications to the original file.
-	    {% else %}Implementé una aplicación de encriptación RSA con claves de 512 bits, además de unos algoritmos que la encriptación usa para hacer las operaciones aritméticas con números muy largos (como la división, la multiplicación, la exponenciación modular, y el Algoritmo Euclidiano extendido) como un ejercicio. En la encriptación RSA, cada usario tiene una clave privado que solamente el/ella puede obtener y una clave pública que todos pueden usar. La aplicación usa la clave privado de un usario y un valor hash basado en el texto del archivo para generar un número que se llama una firma. La firma es como una carta que es escrita en la letra del usario: indica el contenido original del archivo, y el usario definitivamente lo produjo. Luego, otro usario puede asegurarse de que el archivo no he cambiado. Para esto, la aplicación obtiene un valor hash basado en el texto del archivo como antes, "descifra" la firma usando la clave pública del usario primario, y compara el resultado con el valor hash. Si los números son iguales, sería como si toda esa "carta" fuera escrita en la letra del usario original: sabríamos que nadie más cambiaría el archivo. Esto le permite a un usario o una aplicación (con unos cambios pequeños al proyecto) proteger de modificaciones que son peligrosos o no son autorizados. {% endif %}</p>
-	</div>
+		<div class="view">
+		    <img id="thumb" src="/static/images/Lock.png">
+		    <p>{% if language == "English" %}I implemented RSA encryption with 512-bit keys as well as some of the algorithms it uses to do math with very large numbers (division, multiplication, modular exponentiation, and the extended Euclidean algorithm) as an exercise. In RSA encryption, a user has a "private" key (number) that only they have access to, and a "public" key (number) that everyone else can access. The application can use a person's private key and a hash (also a number) that's based on the contents of a file to generate a number called a signature. The signature is like a copy of a letter in the user's handwriting: it shows what was originally in the file, and we know the user made it. Another user can later verify that same file hasn't been changed. For this, the application generates a hash based on the file's contents in the same way, "decrypts" the signature using the first person's public key, and compares the result with the hash. If the two values are the same, it's like that whole "letter" has been shown to be in the first user's handwriting--we know no one else changed the file. This allows a user or application (with some minor modifications to the project) to protect against malicious/unauthorized modifications to the original file.
+		    {% else %}Implementé una aplicación de encriptación RSA con claves de 512 bits, además de unos algoritmos que la encriptación usa para hacer las operaciones aritméticas con números muy largos (como la división, la multiplicación, la exponenciación modular, y el Algoritmo Euclidiano extendido) como un ejercicio. En la encriptación RSA, cada usario tiene una clave privado que solamente el/ella puede obtener y una clave pública que todos pueden usar. La aplicación usa la clave privado de un usario y un valor hash basado en el texto del archivo para generar un número que se llama una firma. La firma es como una carta que es escrita en la letra del usario: indica el contenido original del archivo, y el usario definitivamente lo produjo. Luego, otro usario puede asegurarse de que el archivo no he cambiado. Para esto, la aplicación obtiene un valor hash basado en el texto del archivo como antes, "descifra" la firma usando la clave pública del usario primario, y compara el resultado con el valor hash. Si los números son iguales, sería como si toda esa "carta" fuera escrita en la letra del usario original: sabríamos que nadie más cambiaría el archivo. Esto le permite a un usario o una aplicación (con unos cambios pequeños al proyecto) proteger de modificaciones que son peligrosos o no son autorizados. {% endif %}</p>
+		</div>
 
-	<div class="view">
-	    <img id="thumb" src="/static/images/proc.jpg">
-	    <p>{% if language == "English" %}This is part of a processor I designed for a course on assembly language and computer hardware. It executes a 16-bit reduced instruction set. In other words, it takes commands consisting of 16 1's and 0's and uses them to execute programs. It was designed using Logisim software.{% else %}Esto es una parte de un procesador que diseñé para una clase sobre el lenguaje ensamblador y el hardware de computador. Interpreta un conjunto de instrucciones reducidas con 16 bits. En otras palabras, usa instrucciones que consisten en 16 1's y 0's y las usa para realizar programas. Lo diseñé con Logisim.{% endif %}</p>
-	</div>
+		<div class="view">
+		    <img id="thumb" src="/static/images/proc.jpg">
+		    <p>{% if language == "English" %}This is part of a processor I designed for a course on assembly language and computer hardware. It executes a 16-bit reduced instruction set. In other words, it takes commands consisting of 16 1's and 0's and uses them to execute programs. It was designed using Logisim software.{% else %}Esto es una parte de un procesador que diseñé para una clase sobre el lenguaje ensamblador y el hardware de computador. Interpreta un conjunto de instrucciones reducidas con 16 bits. En otras palabras, usa instrucciones que consisten en 16 1's y 0's y las usa para realizar programas. Lo diseñé con Logisim.{% endif %}</p>
+		</div>
 
-	<div class="view">
-	    <img id="thumb" src="/static/images/game.jpg">
-	    <p>{% if language == "English" %}This game, called Zombies, was completed as a course assignment. The player moves through a maze of LED lights while being chased by red "zombies." It was written in MIPS assembly language.{% else %}Creé este juego, "Zombies," para una de mis clases. El jugador mueve en un laberinto de luces LED mientras "zombies" rojos lo persiguen. Es escrito en un lenguaje ensamblador (MIPS).{% endif %}</p>
-	</div>
+		<div class="view">
+		    <img id="thumb" src="/static/images/game.jpg">
+		    <p>{% if language == "English" %}This game, called Zombies, was completed as a course assignment. The player moves through a maze of LED lights while being chased by red "zombies." It was written in MIPS assembly language.{% else %}Creé este juego, "Zombies," para una de mis clases. El jugador mueve en un laberinto de luces LED mientras "zombies" rojos lo persiguen. Es escrito en un lenguaje ensamblador (MIPS).{% endif %}</p>
+		</div>
 
-	<div class="view">
-	    <a href="/static/images/GUIs.PNG" target ="_blank"><img src="/static/images/GUIs.PNG" title="Open in new tab" id="thumb" style="max-height: 336px"></a>
-	    <p>{% if language == "English" %}I created these Java GUI programs using Swing (left) and JavaFX (right, bottom). One is a version of Pong with one- and two-player modes and shrinking paddles; one is a calculator that performs a kind of arithmetic I invented (notice the underscore button); and the third is a battle simulator for a game implemented as a class project.{% else %}Creé estos GUIs con Swing (a la izquierda) y JavaFX (a la derecha y al fondo). Uno es una versión de Pong que permite uno o dos jugadores y tiene palas que se encojan; uno es una calculadora que ejecuta un tipo de aritmética que inventé (mire el subrayado); y el tercero es un simulador de luchas en un juego escrito para una clase.{% endif %}</p>
-	</div>        
+		<div class="view">
+		    <a href="/static/images/GUIs.PNG" target ="_blank"><img src="/static/images/GUIs.PNG" title="Open in new tab" id="thumb" style="max-height: 336px"></a>
+		    <p>{% if language == "English" %}I created these Java GUI programs using Swing (left) and JavaFX (right, bottom). One is a version of Pong with one- and two-player modes and shrinking paddles; one is a calculator that performs a kind of arithmetic I invented (notice the underscore button); and the third is a battle simulator for a game implemented as a class project.{% else %}Creé estos GUIs con Swing (a la izquierda) y JavaFX (a la derecha y al fondo). Uno es una versión de Pong que permite uno o dos jugadores y tiene palas que se encojan; uno es una calculadora que ejecuta un tipo de aritmética que inventé (mire el subrayado); y el tercero es un simulador de luchas en un juego escrito para una clase.{% endif %}</p>
+		</div>        
+	</div>
+	<div class = "right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></div>
 </div>
-<div class="left-arrow"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></div>
-<div class = "right-arrow"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></div>
-
-<p><span class="highlight">{% if language == "English" %}See "On the Web" for more details on these projects and others!{% else %}¡Mire "En la Red" para más detalles sobre estos proyectos y otros!{% endif %}</span></p>
+<div class="msg">
+	<p><span class="highlight">{% if language == "English" %}See "On the Web" for more details on these projects and others!{% else %}¡Mire "En la Red" para más detalles sobre estos proyectos y otros!{% endif %}</span></p>
+</div>
 
 {% endblock %}

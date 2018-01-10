@@ -87,6 +87,10 @@ span.highlight {
   font-size: 1.1em;
 }
 
+div.msg {
+  margin-top: 20px;
+}
+
 #thumb {
   height:100%;
   width:100%;
@@ -102,31 +106,37 @@ span.highlight {
   padding-bottom: 1em;
 }
 
-div.photo-gallery {
-  width:85%;
+div.photo-gallery, div.carousel {
+  width:90%;
   max-width:800px;
-  overflow: hidden;
   margin:auto;
   text-align:center;
 }
 
+div.photo-gallery {
+  overflow: hidden;
+}
+
 .left-arrow, .right-arrow {
-  display:inline-block;
+  display: block;
   font-size: 3em;
+  position: absolute;
+  top: 40%;
+}
+
+.left-arrow {
+  left: -5%;
+  padding: 0% 10% 10% 0%;
+}
+
+.right-arrow {
+  right: -5%;
+  padding: 0% 0% 10% 10%;
 }
 
 .left-arrow:hover, .right-arrow:hover {
   color:#aaa;
 }
-
-.left-arrow {
-  padding-right:25%;
-}
-
-.right-arrow {
-  padding-left:25%;
-}
-
 
 
 .photo {
@@ -141,8 +151,8 @@ div.view {
   max-width:800px;
   padding-top: 40px;
   padding-bottom: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #5d4037;
   /*background: rgba(238,238,238,0.6);*/
   border-radius:8px;
@@ -155,6 +165,7 @@ div.view {
 
 div.view > p {
   color:#e0e0e0;
+  font-size:1.3em;
 }
 
 hw {
