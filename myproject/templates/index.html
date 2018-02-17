@@ -4,12 +4,14 @@
 
 <title>Andrew Puglionesi</title>
 
-<div class="container" style="width:70%;min-width:320px;">    
-	<hw id="indexhead">{% if language == "English" %}Hello, world!{% else %}¡Hola, mundo!{% endif %}</hw>
-    <div class="hr-cntnr">
-        <hr>
+<div class="container" style="width:70%;min-width:320px;">  
+    <div class="falling-header">
+    	<hw id="indexhead">{% if language == "English" %}Hello, world!{% else %}¡Hola, mundo!{% endif %}</hw>
+        <div class="hr-cntnr">
+            <hr>
+        </div>
     </div>
-    <div class="index-box">
+    <div class="index-box" id="first-box">
         <p>
             {% if language == "English" %}
             I am a computer science major at the University of Pittsburgh interested in a career in web and/or applications development. I want to make the world a better place through technology.
@@ -18,7 +20,7 @@
             {% endif %}
         </p>
     </div>
-    <div class="index-box">
+    <div class="index-box" id="second-box">
         <p>
             {% if language == "English" %}
             I have a strong grounding in the natural sciences, mathematics, and computer science, with practical experience in diverse areas, from laboratory research to music to software engineering and web development.
@@ -27,7 +29,7 @@
             {% endif %}
         </p>
     </div>
-    <div class="index-box">
+    <div class="index-box" id="third-box">
         <p>
             {% if language == "English" %}
             Through it all, I’ve become convinced that the best way to learn something new is to do something new, to ask questions and seek answers, and always to strive for improvement.
