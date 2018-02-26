@@ -35,6 +35,9 @@ div.index-box {
   0% {
     margin-top: 200vh;
   }
+  85% {
+    margin-top: -2%;
+  }
   100% {
     margin-top: 0vh;
   }
@@ -43,6 +46,9 @@ div.index-box {
 @-webkit-keyframes slideUp1 {
   0% {
     margin-top: 200vh;
+  }
+  85% {
+    margin-top: -2%;
   }
   100% {
     margin-top: 0vh;
