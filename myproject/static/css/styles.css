@@ -17,16 +17,13 @@ div.index-box {
   background: rgba(238,238,238,0.6);
 }
 
-#first-box, #second-box, #third-box {
-  -moz-animation-duration: 2s;
-  -webkit-animation-duration: 2s;
+#first-box {
+  -moz-animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
-  -moz-animation-delay: 0.5s;
-  -webkit-animation-delay: 0.5s;
-}
-
-#first-box {
+  -moz-animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
   -moz-animation-name: slideUp1;
   -webkit-animation-name: slideUp1;
 }
@@ -34,9 +31,6 @@ div.index-box {
 @-moz-keyframes slideUp1 {
   0% {
     margin-top: 200vh;
-  }
-  85% {
-    margin-top: -2%;
   }
   100% {
     margin-top: 0vh;
@@ -47,76 +41,9 @@ div.index-box {
   0% {
     margin-top: 200vh;
   }
-  85% {
-    margin-top: -2%;
-  }
   100% {
     margin-top: 0vh;
   }
-}
-
-#second-box {
-  -moz-animation-name: slideUp2;
-  -webkit-animation-name: slideUp2;
-}
-
-@-moz-keyframes slideUp2 {
-  0% {
-    margin-top: 0vh;
-  }
-  35% {
-    margin-top: -20%;
-  }
-  100% {
-    margin-top: 0vh;
-  }
-}
-
-@-webkit-keyframes slideUp2 {
-  0% {
-    margin-top: 0vh;
-  }
-  35% {
-    margin-top: -20%;
-  }
-  100% {
-    margin-top: 0vh;
-  }
-}
-
-
-#third-box {
-  -moz-animation-name: slideUp3;
-  -webkit-animation-name: slideUp3;
-}
-
-@-moz-keyframes slideUp3 {
-  0% {
-    margin-top: 0vh;
-  }
-  25% {
-    margin-top: -20%;
-  }
-  100% {
-    margin-top: 0vh;
-  }
-}
-
-@-webkit-keyframes slideUp3 {
-  0% {
-    margin-top: 0vh;
-  }
-  25% {
-    margin-top: -20%;
-  }
-  100% {
-    margin-top: 0vh;
-  }
-}
-
-#first-box.no-delay, #second-box.no-delay, #third-box.no-delay {
-  -moz-animation-delay: 0s;
-  -webkit-animation-delay: 0s;
 }
 
 
@@ -340,19 +267,14 @@ div.view > p {
   }
 }
 
-
-
-
 hw {
   font-family: monospace;
   font-size: 5em;
 }
 
 .falling-header {
-  -moz-animation-duration: 1.5s;
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-delay: 0.2s;
-  -webkit-animation-delay: 0.2s;
+  -moz-animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
   -moz-animation-name: slideDown;
   -webkit-animation-name: slideDown;
   -webkit-animation-fill-mode: both;
@@ -376,6 +298,41 @@ hw {
 }
 
 
+.fade-in {
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-timing-function: ease-in;
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 
 /*.rp_320 #indexhead {
