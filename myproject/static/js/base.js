@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 function setIconVisibility(activeNavbarItem) {
-	if (activeNavbarItem == "photography" || activeNavbarItem == "web") {
+	if (activeNavbarItem == "photography" || activeNavbarItem == "web" || activeNavbarItem == "home") {
 		$(".icon-bar").hide();
 	}
 }
