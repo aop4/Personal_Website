@@ -399,3 +399,7 @@ span.push-right {
  left:0em;
  bottom:2em;
 }
+
+i.small-icon {
+  font-size: 3.5em;
+}
