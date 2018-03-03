@@ -403,3 +403,21 @@ span.push-right {
 i.small-icon {
   font-size: 3.5em;
 }
+
+.dark-blue {
+  background-color: #002226;
+  background-color: rgba(34, 34, 34, 0.6);
+}
+
+.dark-hover:hover, .dark-hover:focus {
+  background-color: inherit !important;
+  color: #fff !important;
+}
+
+.dark-divider {
+  background-color: #000 !important;
+}
+
+.inherit-color:focus {
+  background-color: inherit !important;
+}

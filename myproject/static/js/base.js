@@ -6,6 +6,6 @@ $(document).ready(function() {
 
 function setIconVisibility(activeNavbarItem) {
 	if (activeNavbarItem == "photography" || activeNavbarItem == "web" || activeNavbarItem == "home") {
-		$(".icon-bar").hide();
+		$(".icon-bar").hide("slow"); //parameter needed to hide icons in chrome because DOM not ready
 	}
 }
