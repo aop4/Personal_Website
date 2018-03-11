@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$("body").css("visibility", "visible");
 	var activeNavbarItem = $("#navbar-activation-tag").val();
 	$("#"+activeNavbarItem).addClass("active");
 	setIconVisibility(activeNavbarItem);

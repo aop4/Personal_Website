@@ -6,7 +6,7 @@ $(document).ready(function(){
   	adaptiveHeight: true,
   	prevArrow: $('.left-arrow'),
   	nextArrow: $('.right-arrow'),
-  	accessibility: true
+  	accessibility: true,
   });
   
   enableArrowNav();
