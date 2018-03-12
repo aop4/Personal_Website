@@ -215,8 +215,6 @@ div.view > p {
 .fall-down {
   -moz-animation-duration: 2s;
   -webkit-animation-duration: 2s;
-  -moz-animation-delay: 0s;
-  -webkit-animation-delay: 0s;
   -moz-animation-name: fall;
   -webkit-animation-name: fall;
   -webkit-animation-fill-mode: both;
@@ -241,34 +239,6 @@ div.view > p {
 @-webkit-keyframes fall {
   0% {
     margin-top: -100%;
-  }
-  100% {
-    margin-top: 0px;
-  }
-}
-.float-up-fast {
-  -moz-animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  -moz-animation-delay: 0s;
-  -webkit-animation-delay: 0s;
-  -moz-animation-name: slideUpFast;
-  -webkit-animation-name: slideUpFast;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-}
-
-@-moz-keyframes slideUpFast {
-  0% {
-    margin-top: 20vh;
-  }
-  100% {
-    margin-top: 0px;
-  }
-}
-
-@-webkit-keyframes slideUpFast {
-  0% {
-    margin-top: 20vh;
   }
   100% {
     margin-top: 0px;
