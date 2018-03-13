@@ -52,9 +52,9 @@
                 
                 <li id="about"><a href={% if language == 'English' %}"/about"{% else %}"/about/es"{% endif %}>{% if language == 'English' %}About the Site{% else %}Sobre Este Sitio {% endif %}</a></li>
 
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" id="lang-choices">
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle inherit-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle inherit-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="lang-picker">Language <span class="caret"></span></a>
                       <ul class="dropdown-menu dark-blue">
                         <li><a class="dark-hover" href="#">{% if language == 'English' %}English{% else %}Español{% endif %}</a></li>
                         <li role="separator" class="divider dark-divider"></li>

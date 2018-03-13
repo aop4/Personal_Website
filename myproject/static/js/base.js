@@ -3,6 +3,13 @@ $(document).ready(function() {
 	var activeNavbarItem = $("#navbar-activation-tag").val();
 	$("#"+activeNavbarItem).addClass("active");
 	setIconVisibility(activeNavbarItem);
+
+	$("#lang-picker").on('mouseover', function() {
+		$(this).click();
+	});
+	$("#lang-choices").on('mouseleave', function() {
+		$("#lang-picker").click();
+	});
 });
 
 function setIconVisibility(activeNavbarItem) {
