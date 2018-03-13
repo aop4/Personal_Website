@@ -5,10 +5,10 @@ $(document).ready(function() {
 	setIconVisibility(activeNavbarItem);
 
 	$("#lang-picker").on('mouseover', function() {
-		$(this).click();
+		$(this).click(); //expand the dropdown on mouseover
 	});
 	$("#lang-choices").on('mouseleave', function() {
-		$("#lang-picker").click();
+		$("#lang-picker").click(); //collapse the dropdown on mouseout
 	});
 });
 
