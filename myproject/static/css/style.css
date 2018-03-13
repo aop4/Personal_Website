@@ -279,8 +279,6 @@ hw {
 .fade-in {
   -moz-animation-duration: 3s;
   -webkit-animation-duration: 3s;
-  -moz-animation-delay: 0.2s;
-  -webkit-animation-delay: 0.2s;
   -moz-animation-name: fadeIn;
   -webkit-animation-name: fadeIn;
   -webkit-animation-fill-mode: both;
