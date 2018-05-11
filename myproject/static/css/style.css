@@ -10,7 +10,7 @@ body {
   font-size: 1.3em;
 }
 
-.navbar {
+.navbar, .dropdown-menu {
   background-color: #002226;
   background-color: rgba(34, 34, 34, 0.6);
   font-family: "Indie Flower", cursive;
