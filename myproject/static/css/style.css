@@ -430,7 +430,7 @@ i.small-icon {
 }
 
 body.woods {
-  background-image: url('/static/images/frick_park.jpg') !important;
+  background-image: url('https://c2.staticflickr.com/8/7605/27306042294_8a0e82f478_o.jpg') !important;
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-size: cover;
