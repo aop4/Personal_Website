@@ -434,7 +434,6 @@ body.woods {
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
-  height: 100%;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow: scroll;
 }
