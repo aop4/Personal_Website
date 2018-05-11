@@ -16,7 +16,7 @@
 
     <!-- Custom styles for this template -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Indie+Flower" rel="stylesheet"> 
     <script src="{% static 'js/ie-emulation-modes-warning.js' %}"></script>
     {% block css %}
     {% endblock %}
@@ -38,22 +38,22 @@
             <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav" style="width:100%">
                 <!--id must match backend value passed in as active_navbar_item so that the area appears selected on desktops. Script just says to make active the item with corresponding id.-->
-                <li><a style="color:white">Andrew Puglionesi</a></li>
+                <li><a class="brand" href="/">Andrew Puglionesi</a></li>
+                <ul class="nav navbar-nav navbar-right">
                 
-                <li id="home"><a href={% if language == 'English' %}"/"{% else %}"/es"{% endif %}>{% if language == 'English' %}Me{% else %}Mí{% endif %}</a></li>
-                
-                <li id="projects"><a href={% if language == 'English' %}"/projects"{% else %}"/projects/es"{% endif %}>{% if language == 'English' %}Projects{% else %}Proyectos{% endif %}</a></li>
-                
-                <li id="photography"><a href={% if language == 'English' %}"/photography"{% else %}"/photography/es"{% endif %}>{% if language == 'English' %}Photography{% else %}Fotografía{% endif %}</a></li>
-                
-                <li id="web"><a href={% if language == 'English' %}"/on-the-web"{% else %}"/on-the-web/es"{% endif %}>{% if language == 'English' %}On the Web{% else %}En la Red{% endif %}</a></li>
-                
-                <li><a href="/static/images/AndrewPuglionesiResume.pdf" target="_blank">{% if language == 'English' %}Resume{% else %}Resumen{% endif %}</a></li>
-                
-                <li id="about"><a href={% if language == 'English' %}"/about"{% else %}"/about/es"{% endif %}>{% if language == 'English' %}About the Site{% else %}Sobre Este Sitio {% endif %}</a></li>
+                    <li id="home"><a href={% if language == 'English' %}"/"{% else %}"/es"{% endif %}>{% if language == 'English' %}Me{% else %}Mí{% endif %}</a></li>
+                    
+                    <li id="projects"><a href={% if language == 'English' %}"/projects"{% else %}"/projects/es"{% endif %}>{% if language == 'English' %}Projects{% else %}Proyectos{% endif %}</a></li>
+                    
+                    <li id="photography"><a href={% if language == 'English' %}"/photography"{% else %}"/photography/es"{% endif %}>{% if language == 'English' %}Photography{% else %}Fotografía{% endif %}</a></li>
+                    
+                    <li id="web"><a href={% if language == 'English' %}"/on-the-web"{% else %}"/on-the-web/es"{% endif %}>{% if language == 'English' %}On the Web{% else %}En la Red{% endif %}</a></li>
+                    
+                    <li><a href="/static/images/AndrewPuglionesiResume.pdf" target="_blank">{% if language == 'English' %}Resume{% else %}Resumen{% endif %}</a></li>
+                    
+                    <li id="about"><a href={% if language == 'English' %}"/about"{% else %}"/about/es"{% endif %}>{% if language == 'English' %}About the Site{% else %}Sobre Este Sitio {% endif %}</a></li>
 
-                <ul class="nav navbar-nav navbar-right" id="lang-choices">
-                    <li class="dropdown">
+                    <li class="dropdown" id="lang-choices">
                       <a href="#" class="dropdown-toggle inherit-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="lang-picker">Language <span class="caret"></span></a>
                       <ul class="dropdown-menu dark-blue">
                         <li><a class="dark-hover" href="#">{% if language == 'English' %}English{% else %}Español{% endif %}</a></li>
