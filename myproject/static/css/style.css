@@ -10,12 +10,13 @@ body {
   font-size: 1.3em;
 }
 
-.navbar, .dropdown-menu {
+.navbar, .dropdown-menu > li > a {
   background-color: #002226;
   background-color: rgba(34, 34, 34, 0.6);
-  font-family: "Indie Flower", cursive;
+  font-family: "Amatic SC", cursive;
   font-weight: 900;
-  font-size: 1.1em;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
 }
 
 .index-container {
@@ -414,6 +415,10 @@ i.small-icon {
 .dark-hover:hover, .dark-hover:focus {
   background-color: inherit !important;
   color: #fff !important;
+}
+
+#lang-choices:hover, .dropdown:hover {
+  color: inherit !important;
 }
 
 .dark-divider {

@@ -9,6 +9,7 @@ $(document).ready(function() {
 	});
 	$("#lang-choices").on('mouseleave', function() {
 		$("#lang-picker").click(); //collapse the dropdown on mouseout
+		$('body').click();
 	});
 	$("body").css("visibility", "visible");
 });
