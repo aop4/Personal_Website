@@ -5,6 +5,14 @@ body {
   visibility: hidden; /*Hide entire pages until they fully load, to avoid jerky animation*/
 }
 
+body.woods {
+  background-image: url('https://c2.staticflickr.com/8/7605/27306042294_8a0e82f478_o.jpg') !important;
+  background-attachment:scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
 .brand {
   color: #ddd;
   font-size: 1.3em;
@@ -31,7 +39,7 @@ div.index-box {
   padding:0.5em 0.5em 0.25em 0.5em;
   border-radius:5px;
   margin-bottom:2em;
-  background: rgba(238,238,238,0.6);
+  background: rgba(238,238,238,0.8);
 }
 
 .index-box > p {
@@ -102,7 +110,7 @@ hr {
 }
 
 .hr-cntnr {
-  margin-bottom:3em;
+  margin-bottom:2em;
 }
 
 h1 {
@@ -223,6 +231,7 @@ div.view {
   /*background: rgba(238,238,238,0.6);*/
   border-radius:8px;
   margin:auto;
+  margin-bottom: 1em;
   text-align: left;
   background-image: url('https://c1.staticflickr.com/3/2717/32881036551_86553db430_b.jpg') !important;
   background-attachment:fixed;
@@ -429,16 +438,9 @@ i.small-icon {
   background-color: inherit !important;
 }
 
-body.woods {
-  background-image: url('https://c2.staticflickr.com/8/7605/27306042294_8a0e82f478_o.jpg') !important;
-  background-attachment:scroll;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-}
-
 @media screen and (min-device-width: 900px) {
   body.woods {
-    background-attachment: fixed;
+    background-attachment: fixed; /*on mobile this causes background under
+    the viewport not to be loaded until you scroll to it. Not well supported*/
   }
 }
