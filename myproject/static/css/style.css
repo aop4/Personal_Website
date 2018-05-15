@@ -234,7 +234,7 @@ div.view {
   margin-bottom: 1em;
   text-align: left;
   background-image: url('https://c1.staticflickr.com/3/2717/32881036551_86553db430_b.jpg') !important;
-  background-attachment:fixed;
+  background-size:cover;
   background-repeat: no-repeat;
 }
 
