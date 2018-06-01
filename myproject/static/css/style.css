@@ -198,6 +198,10 @@ div.photo-gallery {
   top: 40%;
 }
 
+.arrow-projects {
+  color: #888;
+}
+
 .left-arrow {
   left: -5%;
   padding: 0% 10% 10% 0%;
