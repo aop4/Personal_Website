@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+	<head>
+		<title>NaturalTypewriter.js Demo</title>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Yellowtail|Patrick+Hand" rel="stylesheet">
+		<link href="{% static 'css/typewriter-demo.css' %}" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="content">
+	        <h1 id="header"></h1>
+	        <h2 id="natural"></h2>
+	        <div class="demos">
+			    <div class="scroll-btn-container grey pointer" id ="up-btn">
+					<i class="fas fa-angle-double-up arrow"></i>
+				</div>
+				<div class="dynamic-container">
+			        <p id="vanilla" class="active"></p>
+			        <p id="flexible" class="hidden"></p>
+			        <p id="backtrack" class="hidden"></p>
+			       	<p id="chance" class="hidden"></p>
+			       	<div id="end" class="text-center hidden">
+			       		<h2><span id="end-1"></span><span id="end-2"></span><span id="end-3"></span></h2>
+			       	</div>
+			    </div>
+			    <div class="scroll-btn-container">
+			    	<div id="replay-btn" class="pointer">
+			    		<i class="fas fa-sync-alt fa-2x"></i>
+			    		<p class="btn-label">replay</p>
+			    	</div>
+			    	<div id ="down-btn" class="pointer">
+			    		<i class="fas fa-angle-double-down arrow"></i>
+			    	</div>
+			    	<a href="https://github.com/aop4/naturaltypewriter.js" target="_blank"><p id="docs" class="btn-label">Documentation</p></a>
+			    </div>
+			</div>
+		</div>
+    	</div>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    	<script src="{% static 'js/naturaltypewriter.js' %}"></script>
+   		<script src="{% static 'js/typewriter-demo.js' %}"></script>
+	</body>
+</html>

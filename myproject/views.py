@@ -48,3 +48,7 @@ class AboutPage(View):
 		context["language"] = get_language(request)
 		context["active_navbar_item"] = "about"
 		return render(request, 'site.html', context)
+
+class TypewriterDemo(View):
+	def get(self, request):
+		return render(request, 'typewriter-demo.html')

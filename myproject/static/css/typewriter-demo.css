@@ -1,0 +1,107 @@
+body {
+	max-width: 100%;
+}
+
+.content {
+	width:90%;
+	max-width:1080px;
+	margin:auto;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	font-size: 1.3em;
+}
+
+.scroll-btn-container {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.dynamic-container {
+	min-height: 20vh;
+}
+
+.demos {
+	padding-top: 2em;
+	opacity: 0;
+	animation-name: fadein;
+	animation-delay: 2s;
+	animation-duration: 6s;
+	animation-fill-mode: both;
+}
+
+@media screen and (max-device-width: 900px) {
+	h1 {
+		font-size: 1em;
+	}
+	h2 {
+		font-size: 0.85em;
+	}
+	p {
+		font-size: 1em;
+	}
+	.dynamic-container {
+		min-height: 40vh;
+	}
+	.demos {
+		padding-top: 1em;
+	}
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+#end-1 {
+	font-family: 'Yellowtail', cursive;
+}
+
+#end-3 {
+	font-family: 'Patrick Hand', cursive;
+}
+
+.grey {
+	color: #555;
+}
+
+.text-center {
+	text-align: center;
+}
+
+#replay-btn {
+	padding-bottom: 1em;
+	color: #222;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.arrow {
+	font-size: 1.4em;
+}
+
+.btn-label {
+	font-size: 0.8em;
+}
+
+#docs {
+	padding-top: 2em;
+}
