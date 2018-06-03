@@ -75,15 +75,20 @@ $(document).ready(function() {
 		typingFunctions[id]();
 	}
 
+	function fadeIn(demoFrame) {
+		demoFrame.css('opacity', '0');
+		demoFrame.animate({
+			'opacity':'1'
+		}, 1000);
+	}
+
 	//called when the user views another component of the demo
 	function switchFrames(currFrame, nextFrame) {
-		currFrame.slideUp();
+		currFrame.slideUp(200);
 		currFrame.removeClass('active');
-		nextFrame.slideDown(function() {
-			//callback for slideDown--write to the frame when
-			//it's done sliding in
-			typeInFrame(nextFrame);
-		});
+		typeInFrame(nextFrame);
+		nextFrame.slideDown(200);
+		fadeIn(nextFrame);
 		nextFrame.addClass('active');
 	}
 
@@ -123,7 +128,7 @@ $(document).ready(function() {
 		goDown($(this));
 	});
 
-	//add support for swiping on mobile
+	//add support for swiping on mobile... doesn't appear to work yet
 	$('.demos').swipe(function(event, direction) {
 		if (direction === 'down') {
 			goDown($('#down-btn'));
