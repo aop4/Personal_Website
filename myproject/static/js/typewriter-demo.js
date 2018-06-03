@@ -13,8 +13,9 @@ $(document).ready(function() {
 	//at once, when the user views a demo frame a second time
 	var vanillaWriter = new NaturalTypewriter({'interval':40});
 	var flexWriter = new NaturalTypewriter(flexConfig);
-	var backTrackWriter = new NaturalTypewriter({'interval':120,
-		'flexibility':80, 'backtrackProbability':0.03});
+	var backTrackWriter = new NaturalTypewriter({'interval':80,
+		'flexibility':50, 'backtrackProbability':0.03,
+		'backtrackDelay':300});
 	var chanceWriter = new NaturalTypewriter({'interval':40, 
 		'flexibility':40});
 	var audioWriter = new NaturalTypewriter({'interval':40, 
