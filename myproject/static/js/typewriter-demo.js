@@ -123,6 +123,17 @@ $(document).ready(function() {
 		goDown($(this));
 	});
 
+	//add support for swiping on mobile
+	$('.demos').swipe(function(event, direction) {
+		if (direction === 'down') {
+			goDown($('#down-btn'));
+		}
+		else if (direction === up) {
+			goUp($('#up-btn'));
+		}
+	});
+
+
 	$('body').keydown(function(e) {
 		if (e.which === 38) {
 			goUp($('#up-btn'));
