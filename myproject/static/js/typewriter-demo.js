@@ -4,7 +4,7 @@ $(document).ready(function() {
 		'flexibility':40});
 	titleWriter.write(document.getElementById('header'), 'naturaltypewriter.js');
 	titleWriter.write(document.getElementById('natural'),
-		"You may be wondering what's so \"natural\" about it");
+		"Wondering what's so \"natural\" about it?");
 
 	var flexConfig = {'interval':80, 'flexibility':40};
 
