@@ -52,3 +52,7 @@ class AboutPage(View):
 class TypewriterDemo(View):
 	def get(self, request):
 		return render(request, 'typewriter-demo.html')
+
+class BlogPost(View):
+	def get(self, request):
+		return render(request, 'blogpost.html')

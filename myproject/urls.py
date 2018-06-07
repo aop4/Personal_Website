@@ -30,4 +30,5 @@ urlpatterns = [
     url(r'^about$', AboutPage.as_view()),
     url(r'^about/es$', AboutPage.as_view()),
     url(r'^typewriter$', TypewriterDemo.as_view()),
+    url(r'^blogpost$', BlogPost.as_view()),
 ]

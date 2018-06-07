@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+		<link href="{% static 'css/typewriter-demo.css' %}" rel="stylesheet">
+	</head>
+	<body>
+		<div class="content">
+	        <p id="text"></p>
+		</div>
+
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    	<script src="{% static 'js/naturaltypewriter.js' %}"></script>
+    	<script>;
+    		$(document).ready(function() {
+
+    			//scroll the window down periodically b/c otherwise the user has
+    			//to scroll manually to keep text in view
+	    		var interval = setInterval(function() {
+	    			$('html')[0].scrollTop = $('html')[0].scrollHeight;
+	    		}, 500);
+
+	    		function stopInterval() {
+					clearInterval(interval);	
+				}
+
+		    	var config = {
+					'interval':70,
+					'flexibility':20,
+					'backtrackProbability':0.003,
+					'backtrackDelay':400,
+				};
+				var writer = new NaturalTypewriter(config);
+				var textElem = document.getElementById('text');
+
+				/* Write text to textElem after delay milliseconds pass. */
+				function writeChunk(text, delay) {
+					writer.append({'domElement':textElem, 'text':text, 'delay':delay});
+				}
+
+				writeChunk("You are not here merely to make a living.\n", 0);
+				writeChunk("You are here in order to enable the world to live more amply, with greater vision, with a finer spirit of hope and achievement.\n", 1000);
+				writeChunk("You are here to enrich the world, and you impoverish yourself if you forget the errand.\n", 2500);
+
+				writeChunk('-Woodrow Wilson\n\n', 2000);
+
+				writeChunk("I feel as though I'm at a bit of a crossroads in life. ", 2000);
+
+				writeChunk("I'm about to start an internship doing software development in industry for the first time, and in a few months I'll have to decide what my first job will be and where I'll call home for quite a while.", 2500);
+
+				writeChunk(" It's a lot to think about.", 500);
+
+				writeChunk(" One of the things I've always trusted would guide me forward in life is a sort of idealistic notion: ", 1500);
+
+				writeChunk("no matter what the temptations, the ways I can work to my own benefit, I can and will choose a path that helps people or the environment in a meaningful way. ", 1500);
+
+				writeChunk("As an aspiring software developer, that's a hard idea to cling to. ", 1000);
+
+				writeChunk("There's a lot of money to be made doing things that arguably don't help people very much at all, and may even do some harm, depending on your viewpoint. ", 1600);
+
+				writeChunk("Technology can impede social interaction and replace careers.", 3000);
+
+				writeChunk(" And at the end of the day, you need to get a job somewhere; ", 2000);
+
+				writeChunk("my ideals may not mesh with the job market. ", 700);
+
+				writeChunk("Thankfully I did choose the internship I'm starting tomorrow with them in mind.\n", 1400);
+				
+				writeChunk("What did he say...", 3000);
+				writeChunk(" You are not here merely to make a living? ", 1000);
+				writeChunk("Yes. ", 3000);
+				writeChunk("You are here to enrich the world? ", 2000);
+				writeChunk("Yes. ", 3000);
+				writeChunk("Remember that. ", 4000);
+				writeChunk("It almost makes me think of nutrients enriching soil.", 2000);
+				writeChunk(" In nature no thing helps nothing.\n", 3000);
+				writeChunk("And really, it doesn't seem like most things are trying to help; ", 2000);
+				writer.append({"domElement":textElem, 'text':"they just do.\n\n\n", callback:stopInterval, 'delay':3000});
+			});
+    	</script>
+	</body>
+</html>
