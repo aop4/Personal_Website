@@ -4,12 +4,28 @@ $(document).ready(function() {
 	$("#"+activeNavbarItem).addClass("active");
 	setIconVisibility(activeNavbarItem);
 	setBodyClass(activeNavbarItem);
+
+	/* Expand the language-choosing dropdown */
+	function openLangDropdown() {
+		$('#lang-choices').removeClass('dropdown');
+		$('#lang-choices').addClass('dropdown-open');
+		$('#lang-picker').attr('aria-expanded', 'true');
+		$('#lang-target').show();
+	}
+
+	/* Contract the language-closing dropdown */
+	function closeLangDropdown() {
+		$('#lang-choices').removeClass('dropdown-open');
+		$('#lang-choices').addClass('dropdown');
+		$('#lang-picker').attr('aria-expanded', 'false');
+		$('#lang-target').hide();
+	}
+
 	$('#lang-picker').on('mouseover', function() {
-		$(this).click(); //expand the dropdown on mouseover
+		openLangDropdown(); //expand the language-choosing dropdown on mouseover
 	});
 	$('#lang-choices').on('mouseleave', function() {
-		$("#lang-picker").click(); //collapse the dropdown on mouseout
-		$('body').click();
+		closeLangDropdown(); //collapse the language-choosing dropdown on mouseout
 	});
 	//scroll down the navigation menu, on mobile devices, when the user
 	//touches the language-choosing dropdown item
