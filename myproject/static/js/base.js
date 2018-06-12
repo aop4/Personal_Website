@@ -34,14 +34,12 @@ $(document).ready(function() {
 				//condition is because this causes touch events to register twice for mobile devices
 		}
 	});
+
 	$('#lang-choices').on('mouseleave', function() {
 		if (!navbarIsMobile()) {
 			closeLangDropdown(); //collapse the language-choosing dropdown on mouseout
 				//condition is because this causes touch events to register twice for mobile devices
 		}
-	});
-	$('#lang-picker').click(function() {
-		openLangDropdown();
 	});
 
 	//scroll down the navigation menu, on mobile devices, when the user
