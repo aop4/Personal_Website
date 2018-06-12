@@ -5,6 +5,13 @@ $(document).ready(function() {
 	setIconVisibility(activeNavbarItem);
 	setBodyClass(activeNavbarItem);
 
+	/* Returns true if the navbar is styled for a mobile phone. In that case,
+	we should ignore mouseover/mouseleave events because they can cause one touch
+	to register as multiple touches. */
+	function navbarIsMobile() {
+		return ($('#mobile-nav-btn').css('display') != 'none');
+	}
+
 	/* Expand the language-choosing dropdown */
 	function openLangDropdown() {
 		$('#lang-choices').removeClass('dropdown');
@@ -22,11 +29,21 @@ $(document).ready(function() {
 	}
 
 	$('#lang-picker').on('mouseover', function() {
-		openLangDropdown(); //expand the language-choosing dropdown on mouseover
+		if (!navbarIsMobile()) {
+			openLangDropdown(); //expand the language-choosing dropdown on mouseover
+				//condition is because this causes touch events to register twice for mobile devices
+		}
 	});
 	$('#lang-choices').on('mouseleave', function() {
-		closeLangDropdown(); //collapse the language-choosing dropdown on mouseout
+		if (!navbarIsMobile()) {
+			closeLangDropdown(); //collapse the language-choosing dropdown on mouseout
+				//condition is because this causes touch events to register twice for mobile devices
+		}
 	});
+	$('#lang-picker').click(function() {
+		openLangDropdown();
+	});
+
 	//scroll down the navigation menu, on mobile devices, when the user
 	//touches the language-choosing dropdown item
 	$('#lang-choices').on('click', function() {
