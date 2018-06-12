@@ -56,9 +56,9 @@
                     <li class="dropdown" id="lang-choices">
                       <a href="#" class="dropdown-toggle inherit-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="lang-picker">Language <span class="caret"></span></a>
                       <ul id="lang-target" class="dropdown-menu dark-blue">
-                        <li><a class="dark-hover" href="#">{% if language == 'English' %}English{% else %}Español{% endif %}</a></li>
+                        <li><a class="dark-hover center-on-mobile" href="#">{% if language == 'English' %}English{% else %}Español{% endif %}</a></li>
                         <li role="separator" class="divider dark-divider"></li>
-                        <li><a class="dark-hover" href={% if language == 'English' and request.path != "/" %}"{{request.path}}/es"{% elif language == 'English' %}"/es"{% elif request.path == '/es' %}"{{request.path|slice:':-2'}}"{% else %}"{{request.path|slice:':-3'}}"{% endif %}>{% if language == 'English' %}Español{% else %}English{% endif %}</a></li>
+                        <li><a class="dark-hover center-on-mobile" href={% if language == 'English' and request.path != "/" %}"{{request.path}}/es"{% elif language == 'English' %}"/es"{% elif request.path == '/es' %}"{{request.path|slice:':-2'}}"{% else %}"{{request.path|slice:':-3'}}"{% endif %}>{% if language == 'English' %}Español{% else %}English{% endif %}</a></li>
                       </ul>
                     </li>
                 </ul>

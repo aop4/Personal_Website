@@ -448,3 +448,7 @@ i.small-icon {
     the viewport not to be loaded until you scroll to it. Not well supported*/
   }
 }
+
+.text-center {
+  text-align: center;
+}

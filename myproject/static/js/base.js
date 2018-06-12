@@ -5,6 +5,10 @@ $(document).ready(function() {
 	setIconVisibility(activeNavbarItem);
 	setBodyClass(activeNavbarItem);
 
+	if (navbarIsMobile()) {
+		$('.center-on-mobile').css('text-align', 'center');
+	}
+
 	/* Returns true if the navbar is styled for a mobile phone. In that case,
 	we should ignore mouseover/mouseleave events because they can cause one touch
 	to register as multiple touches. */
