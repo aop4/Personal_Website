@@ -59,6 +59,7 @@ $(document).ready(function() {
 	if (activeNavbarItem === "home") {
 		$("body").addClass("blur-animation");
 	}
+	
 	$("body").css("visibility", "visible"); //to prevent jerky rendering
 });
 

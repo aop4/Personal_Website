@@ -6,7 +6,7 @@ body {
 }
 
 body.woods {
-  background-image: url('https://c2.staticflickr.com/8/7605/27306042294_8a0e82f478_o.jpg') !important;
+  background-image: url('/static/images/woods.jpg') !important;
   background-attachment:scroll;
   background-repeat: no-repeat;
   background-size: cover;
