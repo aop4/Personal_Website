@@ -56,6 +56,9 @@ $(document).ready(function() {
 			navMenu.scrollTop = navMenu.scrollHeight;
 		}, 10);
 	});
+	if (activeNavbarItem === "home") {
+		$("body").addClass("blur-animation");
+	}
 	$("body").css("visibility", "visible"); //to prevent jerky rendering
 });
 

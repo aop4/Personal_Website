@@ -46,6 +46,27 @@ div.index-box {
   color: #111;
 }
 
+.blur-animation {
+  animation-name: blurFocus;
+  animation-duration: 2.7s;
+  animation-fill-mode: both;
+}
+
+@keyframes blurFocus {
+  0% {
+    filter: blur(10px);
+  }
+  22% {
+    filter: blur(3px);
+  }
+  44% {
+    filter: blur(7px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
 #first-box {
   -moz-animation-duration: 2.5s;
   -webkit-animation-duration: 2.5s;
