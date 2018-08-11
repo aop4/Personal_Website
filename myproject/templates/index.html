@@ -1,4 +1,10 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block css %}
+<link href="{% static 'css/index.css' %}" rel="stylesheet"></link>
+{% endblock %}
+
 {% block content %}
 
 
@@ -8,9 +14,9 @@
     <div class="index-box">
         <p>
             {% if language == "English" %}
-            I am a computer science major at the University of Pittsburgh interested in a career in software development. I want to make the world a better place through technology.
+            <span class="first-letter">I</span> am a computer science major at the University of Pittsburgh seeking a career in software engineering. I consider myself a generalist: I'm not necessarily tied to the back end (I enjoy full stack development), and I'm not tied to any one programming language or development environment.
             {% else %}
-            Estudio la ciencia de computación en la Universidad de Pittsburgh, y tengo interés en una carrera en el campo del desarrollo de software. Quiero mejorar el mundo por la tecnología.
+            <span class="first-letter">E</span>studio la ciencia de computación en la Universidad de Pittsburgh, y busco una carrera en el campo del ingeniero de software. Me considero un generalista: no necesariamente estoy atado al back end (disfruto del desarrollo full stack), y no estoy atado a una sola lengua o un solo entorno de desarrollo.
             {% endif %}
         </p>
     </div>
@@ -20,9 +26,9 @@
     <div class="index-box">
         <p>
             {% if language == "English" %}
-            I have a strong grounding in the natural sciences, mathematics, and computer science, with practical experience in diverse areas, from laboratory research to music to software engineering and web development.
+            <span class="first-letter">O</span>n the contrary, I like to explore technologies. I learn new skills quickly and have an appetite for change, both within and between projects. What keeps me going on any given day is the prospect of new challenges. One constant is that I focus on the readability and quality of what I write—not just from my own perspective, but from that of anyone who might come across my code.
             {% else %}
-            Tengo una base fuerta en las ciencias naturales, las matemáticas, y la ciencia de computación, además de experiencia práctica en áreas diversas, incluyendo las investigaciones científicas, la música, y la ingeniería de software y el desarrollo web.
+            <span class="first-letter">A</span>l contrario, me gusta explorar tecnologías nuevas. Aprendo habilidades nuevas rápidamente y tengo una sed de cambios, dentro de y entre proyectos. Lo que me inspira cada día es la perspectiva de problemas nuevos. Una constante es que concentro en la claridad y la calidad de lo que escrito—de las perspectivas de todos que lo leen.
             {% endif %}
         </p>
     </div>
@@ -32,9 +38,9 @@
     <div class="index-box">
         <p>
             {% if language == "English" %}
-            Through it all, I’ve become convinced that the best way to learn something new is to do something new, to ask questions and seek answers, and always to strive for improvement.
+            <span class="first-letter">T</span>raining and research in the natural sciences have encouraged me to apply a quantitative, investigative approach. An education in computer science has taught me to analyze and attend to the performance of algorithms and systems. My experience has taught me to focus on maintainability. And somewhere along the line I taught myself to put it all together.
             {% else %}
-            Todo eso me ha convencido que la manera mejor para aprender algo nuevo es hacer algo nuevo, pedir preguntas y buscar respuestas, y siempre tratar de mejorarse.
+            <span class="first-letter">F</span>ormación y investigaciones en las ciencias naturales me ha alentado a aplicar un enfoque cuantitativo y investigador. Mi formación en la ciencia de computación me ha ensañado a analizar y considerar la eficiencia de algoritmos y sistemas. Mi experiencia práctica me ha ensañado a concentrar en la mantenimiento de software. Y en algún momento, me enseñé a juntar todo.
             {% endif %}
         </p>
     </div>
