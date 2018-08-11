@@ -49,19 +49,13 @@ div.index-box {
 .blur-animation {
   animation-name: blurFocus;
   animation-delay: 0.25s;
-  animation-duration: 2.7s;
+  animation-duration: 5s;
   animation-fill-mode: both;
 }
 
 @keyframes blurFocus {
   0% {
     filter: blur(10px);
-  }
-  22% {
-    filter: blur(3px);
-  }
-  44% {
-    filter: blur(7px);
   }
   100% {
     filter: blur(0px);
