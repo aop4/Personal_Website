@@ -253,7 +253,10 @@ div.view {
   margin:auto;
   margin-bottom: 1em;
   text-align: left;
-  background-image: url('https://c1.staticflickr.com/3/2717/32881036551_86553db430_b.jpg') !important;
+  /* Original source: https://c1.staticflickr.com/3/2717/32881036551_86553db430_b.jpg
+  from rawpixel: https://www.flickr.com/photos/byrawpixel/32881036551/in/photolist-S6zUBi-25uCCZu-aeCU14-gjxojn-hFhq4x-8XLnWa-e6MZtb-4wram9-MyQh93-VDxPp2-25JiV86-X1J6RZ-T6b6cj-fCJhse-HCiD31-hn6fcB-26wtaWY-25uCiP5-HZTiA6-gkor4U-8MgsQz-dkJBcG-hxFCnx-8D9A7b-opZxtq-dkM1Tw-CSYLcB-dkvWvm-84cKsc-ahvViR-poiP1u-dkvUNB-gvZ4S6-opA5yS-26TpJN1-8PBSyn-5enwn9-HZNSXf-GP9fqz-212uDDU-Siozim-31CjWp-7bbFXy-dGfV53-4tkZvw-8MjvVJ-mb7L5A-WPBcUu-Z3n63S-J85Q4X
+  Used in accordance with their policy: https://www.rawpixel.com/services/image-licenses */
+  background-image: url('/static/images/wood_background.jpg') !important;
   background-size:cover;
   background-repeat: no-repeat;
 }
