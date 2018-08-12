@@ -86,6 +86,7 @@ ul {
 	position: absolute;
 	top: 0;
 	background: radial-gradient(#fff, #eee);
+	background-size: cover;
 }
 
 .song-links {
