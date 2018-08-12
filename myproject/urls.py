@@ -29,6 +29,7 @@ urlpatterns = [
     url(r'^on-the-web/es$', OnTheWebPage.as_view()),
     url(r'^about$', AboutPage.as_view()),
     url(r'^about/es$', AboutPage.as_view()),
+    url(r'^music$', MusicPage.as_view()),
     url(r'^typewriter$', TypewriterDemo.as_view()),
     url(r'^blogpost$', BlogPost.as_view()),
 ]

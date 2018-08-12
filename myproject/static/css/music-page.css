@@ -1,0 +1,94 @@
+.content {
+	width: 90%;
+	max-width: 500px;
+	margin: auto;
+	padding-top: 5em;
+	padding-bottom: 6em;
+	background-color: #fff;
+}
+
+ul {
+	list-style: none;
+	padding: 0 20px;
+}
+
+.active {
+	opacity: 1;
+}
+
+.active .song-title {
+	font-size: 1.3em;
+}
+
+.active .download-song, .active .lyrics-btn {
+	font-size: 1.15em;
+}
+
+.inactive {
+	opacity: 0.6;
+	font-size: 1em;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.inline {
+	display: inline;
+}
+
+.display-none {
+	display: none;
+}
+
+.float-right {
+	float: right;
+}
+
+.lyrics-btn {
+	margin-right: 1em;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.song-handle {
+	width: 100%;
+	padding: 2em 0;
+}
+
+.play-icon {
+	color: #337ab7;
+	padding-right: 1em;
+}
+
+.back-btn, .frwrd-btn {
+	font-size: 1.3em;
+	color: #555;
+	border-radius: 3px;
+	padding: 7px;
+	cursor: pointer;
+}
+
+.back-btn:hover, .frwrd-btn:hover {
+	background-color: #1aafff;
+	color: white;
+}
+
+.skip-controls {
+	margin-top: 10px;
+}
+
+.full-page {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background: radial-gradient(#fff, #eee);
+}
+
+.song-links {
+	padding-top: 1em;
+	z-index: 1;
+}

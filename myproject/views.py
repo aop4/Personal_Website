@@ -1,6 +1,7 @@
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.shortcuts import render
+from django.template.loader import render_to_string
 from django.views.generic.base import View
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
@@ -48,6 +49,21 @@ class AboutPage(View):
 		context["language"] = get_language(request)
 		context["active_navbar_item"] = "about"
 		return render(request, 'site.html', context)
+
+class MusicPage(View):
+	def get(self, request):
+		context = {
+			'songs': [
+				{'title':'Blemish', 'lyrics':'' },
+				{'title':'Tuning', 'lyrics':'' },
+				{'title':'The Why Did I Decide to Play Blues at 1 AM Blues', 'lyrics':'' },
+				{'title':'Outro', 'lyrics':'' },
+				{'title':'Dear Someday', 'lyrics': render_to_string('dear-someday.html') }
+			]
+		}
+		for index, song in enumerate(context['songs']):
+			song['id'] = index
+		return render(request, 'music.html', context)
 
 class TypewriterDemo(View):
 	def get(self, request):
