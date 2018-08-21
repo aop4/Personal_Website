@@ -7,7 +7,7 @@ $(document).ready(function() {
 	titleWriter.write({'domElement':document.getElementById('natural'),
 		'text':"Wondering what's so \"natural\" about it?", 'delay':700});
 
-	var flexConfig = {'interval':80, 'flexibility':40};
+	var flexConfig = {'interval':80, 'flexibility':50};
 
 	//These have to be defined once and only once--not instantiated within a
 	//function call--or else duplicate typing occurs when two objects type
@@ -26,6 +26,7 @@ $(document).ready(function() {
 	setTimeout(writeToVanilla, 5000);
 
 	function writeToVanilla() {
+		clearWriter(vanillaWriter);
 		vanillaWriter.write({'domElement':document.getElementById('vanilla'), 
 			'text':'Well, you can make it look mechanical by having it type '+
 			'characters at a constant speed. But go ahead and '+
@@ -33,6 +34,7 @@ $(document).ready(function() {
 	}
 
 	function writeToFlexible() {
+		clearWriter(flexWriter);
 		flexWriter.write({'domElement':document.getElementById('flexible'),
 			'text':"You can also make the speed vary from "+
 			"one character to the next, since the way people actually "+
@@ -40,12 +42,14 @@ $(document).ready(function() {
 	}
 
 	function writeToBacktrack() {
+		clearWriter(backTrackWriter);
 		backTrackWriter.write({'domElement':document.getElementById('backtrack'),
 			'text':"There's also support for backtracking--when you mess up a "+
 			"character, realize your mistake, and replace it."});
 	}
 
 	function writeToChance() {
+		clearWriter(chanceWriter);
 		chanceWriter.write({'domElement':document.getElementById('chance'),
 			'text':"Some libraries force you to plan out changes in the flow of typing in "+
 			"painstaking detail, but with naturaltypewriter.js, it's easy. "+
@@ -54,6 +58,7 @@ $(document).ready(function() {
 	}
 
 	function writeToEnd() {
+		clearWriter(lastWriter);
 		//clear text that lastWriter would clear too late
 		$('#end-2').text('');
 		$('#end-3').text('');
@@ -62,6 +67,10 @@ $(document).ready(function() {
 		lastWriter.write({'domElement':document.getElementById('end-1'), 'text':"Your fonts..."});
 		lastWriter.append({'domElement':document.getElementById('end-2'), 'text':"\nYour story..."});
 		lastWriter.append({'domElement':document.getElementById('end-3'), 'text':"\nJust a bit more captivating."});
+	}
+
+	function clearWriter(typewriter) {
+		typewriter.killActivity();
 	}
 
 	var typingFunctions = {
