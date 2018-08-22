@@ -4,6 +4,7 @@ $(document).ready(function(){
   	speed: 300,
   	slidesToShow: 1,
   	adaptiveHeight: true,
+    variableHeight: true,
   	prevArrow: $('.left-arrow'),
   	nextArrow: $('.right-arrow'),
   	accessibility: true,

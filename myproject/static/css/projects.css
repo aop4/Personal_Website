@@ -1,0 +1,8 @@
+#typewriter {
+	height: 20em;
+	overflow-y: auto;
+}
+
+.transparent-img {
+	opacity: 0.8;
+}
