@@ -8,6 +8,7 @@
 {% endblock %}
 
 {% block content %}
+<input type="hidden" value="{{ language }}" id="language">
 <title>Andrew Puglionesi - Projects</title>
 <div class="falling-header">
 	<h1 id="projects-head">{% if language == "English" %} {Projects} {% else %} {Proyectos} {% endif %}</h1>
@@ -35,18 +36,12 @@
 			</div>
 
 			<div class="view" id="typewriter" style="">
-				<p>{% if language == "English" %}
-				<a id="typewriter-repo" target="_blank" href="https://github.com/aop4/naturaltypewriter.js"></a><span id="typewriter-description"></span><a id="typewriter-demo" href="http://www.andrewpuglionesi.com/typewriter"></a>
-				{% else %}
-				<p id="typewriter-description-es">Lo siento, pero todavía no he cumplido una traducción de esta descripción.
-				</p>
-				{% endif %}
-				</p>
+				<p><a id="typewriter-repo" target="_blank" href="https://github.com/aop4/naturaltypewriter.js"></a><span id="typewriter-description"></span><a id="typewriter-demo" href="http://www.andrewpuglionesi.com/typewriter"></a></p>
 			</div>
 
 			<div class="view">
 			    <img class="thumb" src="/static/images/proc.jpg">
-			    <p>{% if language == "English" %}This is part of a processor I designed for a course on assembly language and computer hardware. It executes a 16-bit reduced instruction set. In other words, it takes commands consisting of 16 1's and 0's and uses them to execute programs. It was designed using Logisim software.{% else %}Esto es una parte de un procesador que diseñé para una clase sobre el lenguaje ensamblador y el hardware de computador. Interpreta un conjunto de instrucciones reducidas con 16 bits. En otras palabras, usa instrucciones que consisten en 16 1's y 0's y las usa para realizar programas. Lo diseñé con Logisim.{% endif %}</p>
+			    <p>{% if language == "English" %}This is part of a <a href="https://github.com/aop4/processor" target="_blank">processor</a> I designed for a course on assembly language and computer hardware. It executes a 16-bit reduced instruction set. In other words, it takes commands consisting of 16 1's and 0's and uses them to execute programs. It was designed using Logisim software.{% else %}Esto es una parte de un <a href="https://github.com/aop4/processor" target="_blank">procesador</a> que diseñé para una clase sobre el lenguaje ensamblador y el hardware de computador. Interpreta un conjunto de instrucciones reducidas con 16 bits. En otras palabras, usa instrucciones que consisten en 16 1's y 0's y las usa para realizar programas. Lo diseñé con Logisim.{% endif %}</p>
 			</div>
 
 			<div class="view">
