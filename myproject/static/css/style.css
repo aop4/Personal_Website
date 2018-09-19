@@ -49,7 +49,7 @@ div.index-box {
 .blur-animation {
   animation-name: blurFocus;
   animation-delay: 0.25s;
-  animation-duration: 5s;
+  animation-duration: 2.5s;
   animation-fill-mode: both;
 }
 
