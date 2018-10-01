@@ -7,10 +7,9 @@
 
 {% block content %}
 
-
 <title>Andrew Puglionesi</title>
-<hw>{% if language == "English" %}Hi!{% else %}¡Hola!{% endif %}</hw>
-<div class="container index-container">
+<hw class="blur-animation">{% if language == "English" %}Hi!{% else %}¡Hola!{% endif %}</hw>
+<div class="container index-container blur-animation">
     <div class="index-box">
         <p>
             {% if language == "English" %}
@@ -46,4 +45,7 @@
     </div>
 </div>
 
+{% endblock %}
+
+{% block js %}
 {% endblock %}

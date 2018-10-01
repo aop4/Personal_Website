@@ -56,23 +56,22 @@ $(document).ready(function() {
 			navMenu.scrollTop = navMenu.scrollHeight;
 		}, 10);
 	});
-	if (activeNavbarItem === "home") {
-		$(".index-container,hw").addClass("blur-animation");
+
+	function setIconVisibility(activeNavbarItem) {
+		if (activeNavbarItem == "photography" || activeNavbarItem == "web" || activeNavbarItem == "home") {
+			$(".web-icon-bar").hide("slow"); //parameter needed to hide icons in chrome because DOM not ready.
+				//The web-icon-bar icons are the 4 links to external sites that appear at the bottom of some pages
+		}
 	}
 	
-	$("body").css("visibility", "visible"); //to prevent jerky rendering
+	function setBodyClass(activeNavbarItem) {
+		//add in the forest background where desired
+		if (activeNavbarItem != "photography") {
+			$("body").addClass("woods");
+		}
+	}
+	
+	$("body").css("visibility", "visible"); //to prevent jerky rendering, I hid the body with CSS
+
 });
 
-function setIconVisibility(activeNavbarItem) {
-	if (activeNavbarItem == "photography" || activeNavbarItem == "web" || activeNavbarItem == "home") {
-		$(".web-icon-bar").hide("slow"); //parameter needed to hide icons in chrome because DOM not ready.
-			//The web-icon-bar icons are the 4 links to external sites that appear at the bottom of some pages
-	}
-}
-
-function setBodyClass(activeNavbarItem) {
-	//add in the forest background where desired
-	if (activeNavbarItem != "photography") {
-		$("body").addClass("woods");
-	}
-}
