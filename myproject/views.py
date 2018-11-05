@@ -58,7 +58,8 @@ class MusicPage(View):
 				{'title':'Tuning', 'lyrics':'' },
 				{'title':'The Why Did I Decide to Play Blues at 1 AM Blues', 'lyrics':'' },
 				{'title':'Outro', 'lyrics':'' },
-				{'title':'Dear Someday', 'lyrics': render_to_string('dear-someday.html') }
+				{'title':'Dear Someday', 'lyrics': render_to_string('dear-someday.html') },
+				{'title': "Philosopher's Song", 'lyrics': render_to_string('philosophers-song.html')}
 			]
 		}
 		for index, song in enumerate(context['songs']):
