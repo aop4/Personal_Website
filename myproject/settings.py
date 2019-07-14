@@ -120,7 +120,12 @@ DATABASES['default'] = dj_database_url.config(conn_max_age=500)
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'andrewpuglionesi-old.appspot.com']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'andrewpuglionesi-old.appspot.com',
+    'www.andrewpuglionesi-old.appspot.com'
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
